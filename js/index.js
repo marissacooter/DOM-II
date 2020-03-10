@@ -20,8 +20,11 @@ footerColor.addEventListener("click", event => event.target.style.backgroundColo
 let bodyTitle = document.querySelector("h2.body-title");
 bodyTitle.addEventListener("mouseleave", event => event.target.style.color = "hotpink" );
 
-let btnColor = document.querySelector(".btn");
-btnColor.addEventListener("mouseenter", event => event.target.style.backgroundColor = "hotpink");
+
+let btnColor = document.querySelectorAll(".btn");
+btnColor.forEach(element => {
+    element.addEventListener("mouseenter", event => event.target.style.backgroundColor = "hotpink"
+)});
 
 let firstimg = document.querySelector(".img-content img");
 firstimg.addEventListener("mousemove", event => {
@@ -38,6 +41,16 @@ let dest = document.querySelectorAll("div.destination p");
 dest.forEach(element => {
     element.addEventListener("dblclick", event => event.target.style.color = "hotpink"
 )});
+
+//TASK TWO EXAMPLE:
+let navbar = document.querySelectorAll("a.nav-link");
+navbar.forEach(btn => {
+    event.stopPropagation()
+    event.preventDefault()
+});
+
+// console.log(a.nav-link);
+
 
 
 
