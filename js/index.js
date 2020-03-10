@@ -49,7 +49,6 @@ navbar.forEach(btn => {
     event.preventDefault()
 });
 
-// console.log(a.nav-link);
 
 
 
