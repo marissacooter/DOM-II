@@ -29,9 +29,9 @@ firstimg.addEventListener("mousemove", event => {
 });
 
 // fix this later, new img is popping up over first edited img
-let secondimg = document.querySelector(".secondimg-content img");
-secondimg.addEventListener("mouseup", event => {
-    firstimg.setAttribute("src", "img/bow.jpg")
+let secondimg = document.querySelector(".second-img img");
+secondimg.addEventListener("click", event => {
+    secondimg.setAttribute("src", "img/bow.jpg")
 });
 
 let dest = document.querySelectorAll("div.destination p");
